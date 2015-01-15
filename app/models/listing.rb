@@ -14,4 +14,5 @@ class Listing < ActiveRecord::Base
 #	validates :listing, :attachment_presence => true
 
 	belongs_to :user
+	has_many :orders
 end

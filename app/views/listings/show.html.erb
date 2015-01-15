@@ -14,6 +14,8 @@
 		  <%= @listing.description %>
 		</p>
 
+        <%= link_to "buy it now", new_listing_order_path(@listing), class: "btn btn_primary" %>
+		
 		<p>
 		  <%= number_to_currency(@listing.price) %>
 		</p>
